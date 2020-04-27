@@ -1,0 +1,23 @@
+<h2>{{ title }}</h2>
+
+<div *ngFor="let inventoryItem of inventoryItems">
+    <a href="">
+        <div class="card w-75 mb-2">
+            <div class="card-block">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="photo-box">
+                            <img class="img-fluid" src="http://placehold.it/400x300" alt="image">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="card-title">{{inventoryItem}}</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>   
+</div>

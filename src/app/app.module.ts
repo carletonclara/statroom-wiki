@@ -1,16 +1,30 @@
+import { InventoryService } from './inventory/inventory.service';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home';
+import { appRoutingModule } from './app.routing';
+import { InventoryComponent } from './inventory';
+import { AnalyticsComponent } from './analytics';
+import { AnnouncementsComponent } from './announcements';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    InventoryComponent,
+    AnalyticsComponent,
+    AnnouncementsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    appRoutingModule
   ],
-  providers: [],
+  providers: [
+    InventoryService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
