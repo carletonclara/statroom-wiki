@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class InventoryComponent {
   title = "List of Items";
-  inventoryItems = ["course1", "course2", "course3"];
+  inventoryItems;
 
   constructor(service: InventoryService) { 
-    
+    this.inventoryItems = service.getInventoryItems();
   }
 }

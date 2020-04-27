@@ -1,4 +1,4 @@
-import { InventoryService } from './inventory/inventory.service';
+import { InventoryService } from './inventory';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
